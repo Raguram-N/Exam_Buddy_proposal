@@ -158,4 +158,4 @@ The goal is not to replace existing learning methods, but to create a trusted AI
 
 # 🚀 ExamBuddy AI
 
-### Talk. Learn. Revise. Crack the Exam.
+> **Talk. Learn. Revise. Crack the Exam.**
