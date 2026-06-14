@@ -129,7 +129,7 @@ This demonstrates that even modest adoption can create a meaningful education te
 
 ## 8. Current Exploration
 
-We are currently evaluating:
+I am are currently evaluating:
 
 * Technical Feasibility
 * AI Architecture
@@ -137,12 +137,13 @@ We are currently evaluating:
 * Voice Interaction Capabilities
 * MVP Development Roadmap
 
-We welcome discussions with professionals interested in:
+I welcome discussions with professionals interested in:
 
-* Artificial Intelligence
-* Product Development
-* Mobile Applications
-* Education Technology
+* AI developer
+* UI/UX design
+* Devops Architect
+* Solution Architect
+* Tester
 
 ---
 
