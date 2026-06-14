@@ -131,4 +131,5 @@ ExamBuddy AI explores a simple but powerful idea:
 The goal is not to replace existing learning methods, but to create a trusted AI companion that helps aspirants learn, revise, and prepare more effectively—anytime, anywhere.
 
 **ExamBuddy AI**
-*Talk. Learn. Revise. Crack the Exam.*
+
+> **Talk. Learn. Revise. Crack the Exam.**
