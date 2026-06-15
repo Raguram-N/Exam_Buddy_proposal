@@ -60,6 +60,12 @@ No searching. No scrolling. Just learning.
 
 ---
 
+## 🚀 Prototype
+
+ **https://raguram-n.github.io/Exam_Buddy_proposal/**
+
+---
+
 ## 📚 Trusted Knowledge Sources
 
 All AI responses are grounded in verified, exam-relevant content:
