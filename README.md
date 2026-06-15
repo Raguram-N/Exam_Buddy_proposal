@@ -43,19 +43,19 @@ ExamBuddy AI allows students to learn through simple voice conversations.
 
 ### Example
 
-**Student:**
+> **Student:**
 
 "Explain Fundamental Rights."
 
-**ExamBuddy AI:**
+> **🤖 ExamBuddy AI:**
 
 Provides a simple exam-oriented explanation.
 
-**Student:**
+> **Student:**
 
 "Ask me 5 questions from this topic."
 
-**ExamBuddy AI:**
+> **ExamBuddy AI:**
 
 Starts a quiz immediately.
 
@@ -144,29 +144,6 @@ Every student gets their own AI learning companion.
 
 ## Business Model
 
-## Free Plan
-
-Includes:
-
-* Limited voice questions
-* Basic topic explanations
-* Trial access to features
-
----
-
-## Premium Plan – ₹199/month
-
-Includes:
-
-* 500–1000 Voice Minutes
-* Unlimited Text Chat
-* Unlimited MCQ Generation
-* Revision Notes
-* Topic Summaries
-* Personalized Learning Support
-
----
-
 ## Coaching Institute Partnership
 
 Coaching institutes can integrate ExamBuddy AI into their platform.
@@ -188,7 +165,31 @@ Based on usage and student volume.
 
 ---
 
-## Market Opportunity
+## Free Plan
+
+Includes:
+
+* Limited voice questions
+* Basic topic explanations
+* Trial access to features
+
+---
+
+## Premium Plan for self learner – ₹199/month
+
+Includes:
+
+* 500–1000 Voice Minutes
+* Unlimited Text Chat
+* Unlimited MCQ Generation
+* Revision Notes
+* Topic Summaries
+* Personalized Learning Support
+
+
+---
+
+## 💰 Market Opportunity
 
 India has millions of competitive exam aspirants.
 
