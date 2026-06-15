@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExamBuddy AI - Full UPSC Workspace</title>
+<style>
+:root {
+/* Premium Academic Editorial Palette */
+--bg-base: #fbfaf7; /* Premium book-paper tone */
+--bg-card: #ffffff; /* Pure white writing sheets */
+--bg-sidebar: #f4f1ea; /* Deeper parchment for grounding */
+--bg-nav-active: #e9e4da; /* Selected item parchment shadow */
+--border-subtle: #e3ded5; /* Clean book-binding rules */
+--border-focus: #bfae93; /* Sandstone accent border */
+
+/* Typography Palette built for hours of reading */
+--text-primary: #1b1b1f; /* Deep charcoal book ink */
+--text-secondary: #53515a; /* Clean graphite for descriptive copy */
+--text-muted: #95919e; /* Muted gray for small metadata labels */
+
+/* Strategic Status Accents */
+--brand-stone: #282c2a; /* Slate black for primary commands */
+--status-pass: #2b703a; /* Muted forest green for stable retention */
+--status-review: #b83232; /* Deep madder red for structural decay warnings */
+--accent-voice: #5b21b6; /* Deep violet for active voice streams */
+
+--font-serif: "Georgia", Cambria, "Times New Roman", serif;
+--font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+
+body {
+background: var(--bg-base);
+color: var(--text-primary);
+font-family: var(--font-sans);
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+}
+
+/* SCREEN 1: Gateway Portal Access */
+#portal-gate-wrapper {
+position: fixed;
+inset: 0;
+z-index: 10000;
+background: var(--bg-base);
+display: flex;
+align-items: center;
+justify-content: center;
+transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.portal-gate-card {
+background: var(--bg-card);
+border: 1px solid var(--border-subtle);
+padding: 56px 48px;
+width: 100%;
+max-width: 420px;
+border-radius: 4px;
+box-shadow: 0 16px 40px rgba(40, 44, 42, 0.03);
+text-align: center;
+}
+
+.portal-gate-logo {
+font-family: var(--font-serif);
+font-size: 1.65rem;
+font-weight: 400;
+color: var(--brand-stone);
+margin-bottom: 6px;
+}
+
+.portal-gate-sub {
+font-size: 0.72rem;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+color: var(--text-muted);
+margin-bottom: 40px;
+}
+
+.portal-input-container {
+text-align: left;
+margin-bottom: 24px;
+}
+
+.portal-input-label {
+display: block;
+font-size: 0.7rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+color: var(--text-secondary);
+margin-bottom: 8px;
+}
+
+.portal-field {
+width: 100%;
+background: var(--bg-base);
+border: 1px solid var(--border-subtle);
+color: var(--text-primary);
+padding: 14px;
+font-size: 0.9rem;
+border-radius: 4px;
+outline: none;
+}
+
+.portal-init-btn {
+width: 100%;
+background: var(--brand-stone);
+color: var(--bg-base);
+border: none;
+padding: 16px;
+font-size: 0.85rem;
+font-weight: 600;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+border-radius: 4px;
+cursor: pointer;
+}
+
+/* Master Layout Grid Frame */
+.workspace-shell {
+display: none;
+grid-template-columns: 280px 1fr;
+height: 100vh;
+width: 100vw;
+}
+
+/* Sidebar Structural Rail */
+.nav-sidebar {
+background: var(--bg-sidebar);
+border-right: 1px solid var(--border-subtle);
+padding: 48px 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.sidebar-brand h1 {
+font-family: var(--font-serif);
+font-size: 1.35rem;
+font-weight: 400;
+color: var(--brand-stone);
+}
+
+.sidebar-brand p {
+font-size: 0.75rem;
+color: var(--text-muted);
+text-transform: uppercase;
+letter-spacing: 0.05em;
+margin-top: 2px;
+}
+
+.menu-list {
+list-style: none;
+margin-top: 48px;
+}
+
+.menu-item {
+font-size: 0.9rem;
+font-weight: 500;
+color: var(--text-secondary);
+padding: 14px 16px;
+margin-left: -16px;
+border-radius: 4px;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 12px;
+transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+background: rgba(0, 0, 0, 0.03);
+color: var(--text-primary);
+}
+
+.menu-item.active {
+background: var(--bg-card);
+color: var(--brand-stone);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+border: 1px solid var(--border-subtle);
+}
+
+.sidebar-user-footer {
+border-top: 1px solid var(--border-subtle);
+padding-top: 24px;
+}
+
+.user-name {
+font-size: 0.9rem;
+font-weight: 600;
+color: var(--brand-stone);
+}
+
+.user-track {
+font-size: 0.75rem;
+color: var(--text-muted);
+}
+
+/* Core Content Canvas Stage */
+.main-stage {
+overflow-y: auto;
+padding: 56px 64px;
+height: 100vh;
+}
+
+.content-panel {
+display: none;
+max-width: 1040px;
+animation: clearPaneSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.content-panel.active {
+display: block;
+}
+
+@keyframes clearPaneSlideIn {
+from { opacity: 0; transform: translateY(6px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.panel-title-block {
+margin-bottom: 36px;
+border-bottom: 1px solid var(--border-subtle);
+padding-bottom: 24px;
+}
+
+/* Layout Frameworks */
+.home-intelligence-grid {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 32px;
+margin-bottom: 32px;
+}
+
+.macro-metrics-row {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 16px;
+margin-bottom: 24px;
+}
+
+.home-summary-card {
+background: var(--bg-card);
+border: 1px solid var(--border-subtle);
+border-radius: 4px;
+padding: 24px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+}
+
+.home-summary-card span {
+font-size: 0.68rem;
+text-transform: uppercase;
+font-weight: 600;
+color: var(--text-muted);
+letter-spacing: 0.04em;
+}
+
+.performance-briefing-pane {
+background: var(--bg-card);
+border: 1px solid var(--border-subtle);
+border-radius: 4px;
+padding: 32px;
+}
+
+.briefing-list {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.briefing-node-item {
+font-size: 0.88rem;
+line-height: 1.5;
+color: var(--text-secondary);
+padding-left: 16px;
+position: relative;
+}
+
+.briefing-node-item::before {
+content: "•";
+position: absolute;
+left: 0;
+color: var(--border-focus);
+font-size: 1.2rem;
+top: -2px;
+}
+
+.ledger-separator-rule {
+height: 1px;
+background: var(--border-subtle);
+margin: 24px 0;
+}
+
+/* SCREEN 3: Deep 7-Pillar Syllabus Deck Layout */
+.page-deck-split-wrapper {
+display: grid;
+grid-template-columns: 280px 1fr;
+border: 1px solid var(--border-subtle);
+background: var(--bg-card);
+border-radius: 4px;
+box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+}
+
+.deck-index-rail {
+background: #fdfcfb;
+border-right: 1px solid var(--border-subtle);
+padding: 24px 12px;
+}
+
+.deck-index-title {
+font-size: 0.68rem;
+font-weight: 700;
+text-transform: uppercase;
+color: var(--text-muted);
+letter-spacing: 0.06em;
+margin-bottom: 14px;
+padding-left: 12px;
+}
+
+.deck-links-list {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.deck-link-node {
+font-size: 0.82rem;
+color: var(--text-secondary);
+padding: 10px 12px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.deck-link-node:hover {
+background: rgba(0,0,0,0.02);
+color: var(--text-primary);
+}
+
+.deck-link-node.active-pane-link {
+background: var(--bg-nav-active);
+color: var(--text-primary);
+font-weight: 600;
+}
+
+.deck-document-stage {
+padding: 40px 48px;
+background: #ffffff;
+}
+
+.syllabus-document-page {
+display: none;
+}
+
+.syllabus-document-page.active-view-pane {
+display: block;
+}
+
+.page-title-banner span {
+font-size: 0.68rem;
+font-weight: 700;
+text-transform: uppercase;
+color: var(--text-muted);
+}
+
+.page-title-banner h3 {
+font-family: var(--font-serif);
+font-size: 1.35rem;
+color: var(--brand-stone);
+margin: 4px 0 12px 0;
+}
+
+.curriculum-card-layout {
+font-size: 0.88rem;
+line-height: 1.6;
+color: var(--text-secondary);
+margin-bottom: 24px;
+}
+
+.subject-quad-metrics-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 12px;
+margin: 20px 0 28px 0;
+}
+
+.quad-metric-pill {
+background: var(--bg-base);
+border: 1px solid var(--border-subtle);
+padding: 14px;
+border-radius: 4px;
+text-align: center;
+}
+
+.quad-metric-pill span {
+display: block;
+font-size: 0.65rem;
+text-transform: uppercase;
+font-weight: 600;
+color: var(--text-muted);
+letter-spacing: 0.02em;
+}
+
+.quad-metric-pill p {
+font-size: 1.15rem;
+font-weight: 600;
+margin-top: 4px;
+color: var(--text-primary);
+}
+
+.subject-slider-stack {
+border-top: 1px dashed var(--border-subtle);
+padding-top: 20px;
+margin-top: 24px;
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.slider-adjustment-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.slider-adjustment-row label {
+font-size: 0.78rem;
+font-weight: 500;
+color: var(--text-secondary);
+width: 150px;
+}
+
+.metric-slider-element {
+flex: 1;
+max-width: 240px;
+accent-color: var(--text-primary);
+cursor: pointer;
+}
+
+.slider-value-badge {
+font-size: 0.8rem;
+font-weight: 600;
+min-width: 40px;
+text-align: right;
+}
+
+/* SCREEN 4: High-End Interactive Socratic Voice Room */
+.socratic-study-board {
+display: grid;
+grid-template-columns: 280px 1fr;
+border: 1px solid var(--border-subtle);
+background: var(--bg-card);
+border-radius: 6px;
+box-shadow: 0 12px 32px rgba(44,48,46,0.02);
+height: 64vh;
+overflow: hidden;
+}
+
+.tutor-control-rail {
+background: #fdfcfb;
+border-right: 1px solid var(--border-subtle);
+padding: 28px 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.tutor-rail-section-title {
+font-size: 0.68rem;
+font-weight: 700;
+text-transform: uppercase;
+color: var(--text-muted);
+letter-spacing: 0.08em;
+margin-bottom: 16px;
+}
+
+.voice-engine-card {
+background: var(--bg-base);
+border: 1px solid var(--border-subtle);
+border-radius: 4px;
+padding: 20px;
+text-align: center;
+margin-bottom: 24px;
+}
+
+.voice-status-ring-wrapper {
+position: relative;
+width: 56px;
+height: 56px;
+margin: 0 auto 12px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.voice-status-ring-outer {
+position: absolute;
+inset: 0;
+border: 2px dashed var(--border-subtle);
+border-radius: 50%;
+transition: all 0.3s ease;
+}
+
+.voice-status-ring-outer.active-pulse {
+border-color: var(--accent-voice);
+animation: spinRing 8s linear infinite, audioPulseEffect 1.5s infinite ease-in-out;
+}
+
+@keyframes audioPulseEffect {
+0% { transform: scale(1); opacity: 1; }
+50% { transform: scale(1.15); opacity: 0.4; }
+100% { transform: scale(1.25); opacity: 0; }
+}
+
+.voice-status-center-dot {
+width: 36px;
+height: 36px;
+background: var(--brand-stone);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+font-size: 0.95rem;
+cursor: pointer;
+transition: all 0.2s ease;
+z-index: 5;
+}
+
+.voice-status-center-dot.active-recording {
+background: var(--accent-voice);
+box-shadow: 0 0 14px rgba(91, 33, 182, 0.3);
+}
+
+.voice-engine-card p {
+font-size: 0.78rem;
+color: var(--text-secondary);
+font-weight: 500;
+line-height: 1.4;
+}
+
+.macro-stack {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.macro-board-btn {
+width: 100%;
+background: #ffffff;
+border: 1px solid var(--border-subtle);
+text-align: left;
+padding: 12px 14px;
+font-size: 0.78rem;
+font-weight: 500;
+color: var(--text-secondary);
+border-radius: 4px;
+cursor: pointer;
+line-height: 1.4;
+transition: all 0.15s ease;
+}
+
+.macro-board-btn:hover {
+border-color: var(--border-focus);
+color: var(--text-primary);
+background: var(--bg-base);
+}
+
+.editorial-ledger-canvas {
+display: grid;
+grid-template-rows: 1fr auto;
+background: #ffffff;
+}
+
+.ledger-scroll-view {
+padding: 44px 48px;
+overflow-y: auto;
+}
+
+.ledger-entry-block {
+margin-bottom: 24px;
+animation: ledgerFadeIn 0.3s ease forwards;
+}
+
+@keyframes ledgerFadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+.ledger-user-prompt {
+font-size: 0.72rem;
+text-transform: uppercase;
+font-weight: 600;
+color: var(--text-muted);
+letter-spacing: 0.04em;
+margin-bottom: 8px;
+border-left: 2px solid var(--border-focus);
+padding-left: 8px;
+}
+
+.ledger-user-prompt span {
+color: var(--text-primary);
+text-transform: none;
+font-size: 0.9rem;
+font-weight: 400;
+letter-spacing: normal;
+display: block;
+margin-top: 4px;
+}
+
+.ledger-tutor-response {
+font-family: var(--font-serif);
+font-size: 1.05rem;
+line-height: 1.7;
+color: var(--text-primary);
+}
+
+/* Socratic Assessment Cards */
+.editorial-quiz-card {
+background: var(--bg-base);
+border: 1px solid var(--border-subtle);
+border-radius: 4px;
+padding: 28px;
+margin-top: 16px;
+}
+
+.quiz-card-meta {
+font-size: 0.65rem;
+text-transform: uppercase;
+font-weight: 700;
+color: var(--text-muted);
+letter-spacing: 0.06em;
+margin-bottom: 8px;
+display: block;
+}
+
+.quiz-question-statement {
+font-family: var(--font-serif);
+font-size: 1.05rem;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+.quiz-option-node {
+display: flex;
+align-items: center;
+gap: 12px;
+background: #ffffff;
+border: 1px solid var(--border-subtle);
+padding: 12px 16px;
+border-radius: 4px;
+font-size: 0.88rem;
+color: var(--text-secondary);
+margin-bottom: 10px;
+cursor: pointer;
+transition: all 0.15s ease;
+}
+
+.quiz-option-node:hover { border-color: var(--border-focus); }
+.quiz-option-node input { accent-color: var(--brand-stone); }
+
+.quiz-action-bar {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+.editorial-verify-btn {
+background: var(--brand-stone);
+color: var(--bg-base);
+border: none;
+padding: 10px 20px;
+font-size: 0.75rem;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.quiz-feedback-output { font-size: 0.82rem; font-weight: 600; }
+
+.ledger-command-dock {
+border-top: 1px solid var(--border-subtle);
+padding: 20px 32px;
+background: #ffffff;
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.ledger-input-field {
+flex: 1;
+border: none;
+font-size: 0.95rem;
+color: var(--text-primary);
+outline: none;
+background: transparent;
+}
+
+.ledger-input-field::placeholder { color: var(--text-muted); font-style: italic; }
+
+.soft-pulse-box {
+display: none;
+gap: 4px;
+}
+
+.pulse-dot {
+width: 6px;
+height: 6px;
+background: var(--text-muted);
+border-radius: 50%;
+animation: bounce 1.4s infinite ease-in-out both;
+}
+.pulse-dot:nth-child(1) { animation-delay: -0.32s; }
+.pulse-dot:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1.0); } }
+
+/* Quantitative Analytics Footer Layout */
+.stats-grid-row {
+margin-top: 32px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 16px;
+}
+
+.stat-card-element {
+background: var(--bg-card);
+border: 1px solid var(--border-subtle);
+padding: 24px;
+border-radius: 4px;
+text-align: center;
+}
+
+.stat-card-element h3 {
+font-family: var(--font-serif);
+font-size: 1.6rem;
+font-weight: 400;
+color: var(--brand-stone);
+margin-bottom: 4px;
+}
+
+.stat-card-element p {
+font-size: 0.72rem;
+text-transform: uppercase;
+font-weight: 600;
+color: var(--text-muted);
+letter-spacing: 0.04em;
+}
+</style>
+</head>
+<body>
+
+<div id="portal-gate-wrapper">
+<div class="portal-gate-card">
+<div class="portal-gate-logo">ExamBuddy AI</div>
+<div class="portal-gate-sub">UPSC Civil Services Matrix</div>
+
+<div class="portal-input-container">
+<label class="portal-input-label">Aspirant Code</label>
+<input type="text" class="portal-field" value="RAGU - 007" readonly>
+</div>
+<div class="portal-input-container">
+<label class="portal-input-label">Terminal Pin</label>
+<input type="password" class="portal-field" value="••••••••" readonly>
+</div>
+
+<button class="portal-init-btn" onclick="openWorkspaceShell()">Access Portal</button>
+</div>
+</div>
+
+<div class="workspace-shell" id="appWorkspaceShellStructure">
+
+<div class="nav-sidebar">
+<div>
+<div class="sidebar-brand">
+<h1>ExamBuddy AI</h1>
+<p>UPSC Core Engine</p>
+</div>
+
+<ul class="menu-list">
+<li class="menu-item active" id="menu-dash" onclick="switchPane('pane-dashboard', this)">✨ Home Overview</li>
+<li class="menu-item" id="menu-sub" onclick="switchPane('pane-syllabus', this)">📖 Syllabus Matrix</li>
+<li class="menu-item" id="menu-tut" onclick="switchPane('pane-tutor', this)">💡 Interactive Tutor</li>
+</ul>
+</div>
+
+<div class="sidebar-user-footer">
+<p class="user-name">RAGU 👋</p>
+<p class="user-track">Civil Services Track Node</p>
+</div>
+</div>
+
+<div class="main-stage">
+
+<div id="pane-dashboard" class="content-panel active">
+<div class="panel-title-block" style="border-bottom: none; margin-bottom: 24px; padding-bottom: 0;">
+<span style="font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); letter-spacing: 0.06em;">🎓 ExamBuddy AI</span>
+<h2 style="font-family: var(--font-serif); font-size: 1.85rem; font-weight: 400; margin-top: 4px; color: var(--brand-stone);">UPSC Civil Services Examination</h2>
+<p style="font-size: 1rem; color: var(--text-secondary); margin-top: 12px;">Welcome back, RAGU 👋</p>
+</div>
+
+<div class="ledger-separator-rule" style="margin: 16px 0 28px 0;"></div>
+
+<div class="home-intelligence-grid" style="grid-template-columns: 1.8fr 1.2fr; gap: 40px;">
+<div>
+<div style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 16px;">📚 Preparation Progress</div>
+<div class="macro-metrics-row" style="grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 32px;">
+<div class="home-summary-card" style="padding: 20px;">
+<span style="font-size: 0.62rem; color: var(--text-muted);">Syllabus Covered</span>
+<h3 id="global-progress-display" style="font-size: 1.75rem; font-family: var(--font-serif); margin-top: 6px; font-weight: 400;">55%</h3>
+</div>
+<div class="home-summary-card" style="padding: 20px;">
+<span style="font-size: 0.62rem; color: var(--text-muted);">Practice Questions</span>
+<h3 id="global-questions-display" style="font-size: 1.75rem; font-family: var(--font-serif); margin-top: 6px; font-weight: 400; color: var(--status-pass);">248</h3>
+</div>
+<div class="home-summary-card" style="padding: 20px;">
+<span style="font-size: 0.62rem; color: var(--text-muted);">Study Streak</span>
+<h3 style="font-size: 1.75rem; font-family: var(--font-serif); margin-top: 6px; font-weight: 400; color: var(--status-review);">12 Days</h3>
+</div>
+</div>
+
+<div style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 16px;">📖 Subjects Covered</div>
+<div class="home-summary-card" style="padding: 20px 24px; margin-bottom: 36px; display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 0.88rem; font-family: var(--font-serif); color: var(--text-primary);">Core Pillars Mastered</span>
+<span style="font-size: 1.25rem; font-weight: 600; color: var(--brand-stone);">8 / 12</span>
+</div>
+
+<div class="home-summary-card" style="background: var(--bg-sidebar); border: none; padding: 24px; border-radius: 4px; font-family: var(--font-serif); font-style: italic; color: var(--text-secondary); font-size: 0.98rem; text-align: center; line-height: 1.6;">
+"Success in UPSC comes from consistency, revision, and smart preparation."
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 32px;">
+<div class="performance-briefing-pane" style="padding: 24px;">
+<h3 class="briefing-heading" style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 16px;">📌 Today's Focus</h3>
+<ul class="briefing-list" style="gap: 12px;">
+<li class="briefing-node-item" style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--text-primary);">Modern Indian History</li>
+<li class="briefing-node-item" style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--text-primary);">Current Affairs</li>
+<li class="briefing-node-item" style="font-family: var(--font-serif); font-size: 0.95rem; color: var(--text-primary);">Indian Polity Revision</li>
+</ul>
+</div>
+
+<div>
+<h3 style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 12px;">⚡ Quick Actions</h3>
+<div class="macro-stack" style="gap: 6px;">
+<button class="macro-board-btn" style="padding: 11px 14px; font-size: 0.82rem;" onclick="directJumpToStudyRoom(); fireStudyPipeline('Generate high-yield UPSC MCQs on today\'s focus modules.')">📝 Generate MCQs</button>
+<button class="macro-board-btn" style="padding: 11px 14px; font-size: 0.82rem;" onclick="directJumpToStudyRoom(); fireStudyPipeline('Initialize full interactive evaluation test.')">🎯 Take a Quiz</button>
+<button class="macro-board-btn" style="padding: 11px 14px; font-size: 0.82rem;" onclick="directJumpToStudyRoom(); fireStudyPipeline('Extract critical study deck text summary sheets.')">📄 Get Notes</button>
+<button class="macro-board-btn" style="padding: 11px 14px; font-size: 0.82rem;" onclick="directJumpToStudyRoom(); fireStudyPipeline('Provide an analytical breakdown summary for focus areas.')">📋 Topic Summary</button>
+<button class="macro-board-btn" style="padding: 11px 14px; font-size: 0.82rem;" onclick="directJumpToStudyRoom(); fireStudyPipeline('Compile active framework retention revision list.')">🔖 Revision List</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="pane-syllabus" class="content-panel">
+<div class="panel-title-block">
+<h2>Syllabus Verification Parameters</h2>
+<p>Granular performance analytics tracked independently across four distinct learning vectors.</p>
+</div>
+
+<div class="page-deck-split-wrapper">
+<aside class="deck-index-rail" style="min-width: 280px;">
+<div class="deck-index-title">GS Paper I Pillars</div>
+<ul class="deck-links-list">
+<li class="deck-link-node" onclick="turnToPage('dp-current-events', this)">📅 1. Current Events</li>
+<li class="deck-link-node" onclick="turnToPage('dp-history-india', this)">📜 2. History of India</li>
+<li class="deck-link-node" onclick="turnToPage('dp-geography', this)">🌍 3. Geography Matrix</li>
+<li class="deck-link-node" onclick="turnToPage('dp-polity-gov', this)">🏛️ 4. Polity & Governance</li>
+<li class="deck-link-node" onclick="turnToPage('dp-economy', this)">📊 5. Economic Dev</li>
+<li class="deck-link-node active-pane-link" onclick="turnToPage('dp-ecology', this)">🌱 6. Ecology & Climate</li>
+<li class="deck-link-node" onclick="turnToPage('dp-science', this)">🔬 7. General Science</li>
+</ul>
+</aside>
+
+<section class="deck-document-stage" id="deckContentDocumentStageWindow">
+
+<div id="dp-current-events" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 01</span><h3>Current Events of National & International Importance</h3></div>
+<p class="curriculum-card-layout">Real-time macro trends tracking, regulatory shifting updates, dynamic legislative acts, and global bilateral alignments.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">50%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">50%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">55%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">45%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="50" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">50%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="50" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">50%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="55" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">55%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="45" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">45%</span></div>
+</div>
+</div>
+
+<div id="dp-history-india" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 02</span><h3>History of India and Indian National Movement</h3></div>
+<p class="curriculum-card-layout">Chronological study of ancient structural roots, medieval administrative setups, and the modern freedom struggle timeline.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">70%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">60%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">55%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">50%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="70" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">70%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="60" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">60%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="55" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">55%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="50" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">50%</span></div>
+</div>
+</div>
+
+<div id="dp-geography" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 03</span><h3>Indian and World Geography Matrix</h3></div>
+<p class="curriculum-card-layout">Physical, social, and economic geography systems of India alongside general global physiographical mappings.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">60%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">55%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">50%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">45%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="60" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">60%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="55" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">55%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="50" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">50%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="45" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">45%</span></div>
+</div>
+</div>
+
+<div id="dp-polity-gov" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 04</span><h3>Indian Polity & Governance Frameworks</h3></div>
+<p class="curriculum-card-layout">Constitutional mechanisms, federal structural provisions, Panchayati Raj systems, and public policy rights portfolios.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">85%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">80%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">75%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">70%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="85" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">85%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="80" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">80%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="75" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">75%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="70" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">70%</span></div>
+</div>
+</div>
+
+<div id="dp-economy" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 05</span><h3>Economic and Social Development</h3></div>
+<p class="curriculum-card-layout">Sustainable initiatives, fiscal inclusions, banking architectures, demographic analytics, and planning paradigms.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">65%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">60%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">60%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">55%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="65" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">65%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="60" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">60%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="60" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">60%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="55" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">55%</span></div>
+</div>
+</div>
+
+<div id="dp-ecology" class="syllabus-document-page active-view-pane">
+<div class="page-title-banner"><span>Pillar Module 06</span><h3>Environmental Ecology & Climate Change</h3></div>
+<p class="curriculum-card-layout">General issues on Environmental Ecology, Bio-diversity and Climate Change - that do not require subject specialization.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">40%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">45%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">40%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">35%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="40" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">40%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="45" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">45%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="40" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">40%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="35" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">35%</span></div>
+</div>
+</div>
+
+<div id="dp-science" class="syllabus-document-page">
+<div class="page-title-banner"><span>Pillar Module 07</span><h3>General Science Core</h3></div>
+<p class="curriculum-card-layout">Applied basic scientific trends, contemporary space achievements, defense tech, and fundamental biology-chemistry paradigms.</p>
+<div class="subject-quad-metrics-grid">
+<div class="quad-metric-pill"><span>Syllabus Comp %</span><p class="val-comp">55%</p></div>
+<div class="quad-metric-pill"><span>Confident %</span><p class="val-conf">50%</p></div>
+<div class="quad-metric-pill"><span>Stability %</span><p class="val-stab">45%</p></div>
+<div class="quad-metric-pill"><span>Revision %</span><p class="val-revi">40%</p></div>
+</div>
+<div class="subject-slider-stack">
+<div class="slider-adjustment-row"><label>Syllabus Completion</label><input type="range" class="metric-slider-element" value="55" min="0" max="100" oninput="syncQuadSliders(this, 'comp')"><span class="slider-value-badge">55%</span></div>
+<div class="slider-adjustment-row"><label>Confidence Level</label><input type="range" class="metric-slider-element" value="50" min="0" max="100" oninput="syncQuadSliders(this, 'conf')"><span class="slider-value-badge">50%</span></div>
+<div class="slider-adjustment-row"><label>Memory Stability</label><input type="range" class="metric-slider-element" value="45" min="0" max="100" oninput="syncQuadSliders(this, 'stab')"><span class="slider-value-badge">45%</span></div>
+<div class="slider-adjustment-row"><label>Revision Cycles</label><input type="range" class="metric-slider-element" value="40" min="0" max="100" oninput="syncQuadSliders(this, 'revi')"><span class="slider-value-badge">40%</span></div>
+</div>
+</div>
+
+</section>
+</div>
+</div>
+
+<div id="pane-tutor" class="content-panel">
+<div class="panel-title-block">
+<h2>Socratic Study Room</h2>
+<p>An editorial workspace built for concept deconstruction, cross-examination, and active core review.</p>
+</div>
+
+<div class="socratic-study-board">
+<aside class="tutor-control-rail">
+<div>
+<div class="tutor-rail-section-title">Acoustic Audio Channel</div>
+<div class="voice-engine-card">
+<div class="voice-status-ring-wrapper">
+<div class="voice-status-ring-outer" id="vOuterRingNode"></div>
+<div class="voice-status-center-dot" id="vCenterDotNode" onclick="toggleVoiceSystemProcessingLink()">🎙️</div>
+</div>
+<p id="voiceStatusLabelText">Call Mentor.<br>Anytime, Anywhere.</p>
+</div>
+</div>
+
+<div>
+<div class="tutor-rail-section-title">Inquiry Benchmarks</div>
+<div class="macro-stack">
+<button class="macro-board-btn" onclick="fireStudyPipeline('Explain Article 356 provisions clearly')">📜 Deconstruct Article 356</button>
+<button class="macro-board-btn" onclick="fireStudyPipeline('Give me a quick practice quiz on emergency provisions')">📝 Initialize Emergency Quiz</button>
+<button class="macro-board-btn" onclick="fireStudyPipeline('Analyze Environmental Ecology & Climate Change targets')">🌱 Review Ecology Pillar</button>
+</div>
+</div>
+</aside>
+
+<section class="editorial-ledger-canvas">
+<div class="ledger-scroll-view" id="studyRoomDialogueStreamContainer">
+<div class="ledger-entry-block">
+<div class="ledger-tutor-response">
+Welcome back, Ragu. Ask **absolutely any UPSC question** in the prompt line below.
+<br><br>
+The embedded deep analysis engine will break down your core question concepts on the fly. Turn on the <strong>Acoustic Channel</strong> microphone to use hands-free speech tracking.
+</div>
+</div>
+</div>
+
+<div class="ledger-command-dock">
+<input type="text" class="ledger-input-field" id="userTextInputPayloadField" placeholder="Ask any civil services question (e.g., Explain Article 21, What is Paris Agreement, etc.)..." onkeypress="handleKeypressValidation(event)">
+<div class="soft-pulse-box" id="softDialogueProcessingIndicatorBlock">
+<div class="pulse-dot"></div><div class="pulse-dot"></div><div class="pulse-dot"></div>
+</div>
+</div>
+</section>
+</div>
+
+<div class="stats-grid-row">
+<div class="stat-card-element">
+<h3 id="footer-count-queries">12</h3>
+<p>Queries Addressed</p>
+</div>
+<div class="stat-card-element">
+<h3 id="footer-count-topics">8</h3>
+<p>Topics Revised</p>
+</div>
+<div class="stat-card-element">
+<h3 id="footer-count-mcqs">248</h3>
+<p>MCQs Attempted</p>
+</div>
+<div class="stat-card-element">
+<h3>1h 24m</h3>
+<p>Total Session Time</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+// Main Window Portal Switcher Logic
+function openWorkspaceShell() {
+document.getElementById("portal-gate-wrapper").style.opacity = "0";
+setTimeout(() => {
+document.getElementById("portal-gate-wrapper").style.display = "none";
+document.getElementById("appWorkspaceShellStructure").style.display = "grid";
+recalculateGlobalSyllabusTrack();
+}, 300);
+}
+
+function switchPane(destinationPanelId, componentLinkAnchor) {
+document.querySelectorAll(".content-panel").forEach(panel => panel.classList.remove("active"));
+document.querySelectorAll(".menu-item").forEach(item => item.classList.remove("active"));
+
+document.getElementById(destinationPanelId).classList.add("active");
+componentLinkAnchor.classList.add("active");
+}
+
+function directJumpToStudyRoom() {
+switchPane('pane-tutor', document.getElementById("menu-tut"));
+}
+
+// Sub-Page Index Rails Mappings
+function turnToPage(targetPageId, navigationElementAnchor) {
+document.querySelectorAll('.syllabus-document-page').forEach(page => page.classList.remove('active-view-pane'));
+document.querySelectorAll('.deck-link-node').forEach(node => node.classList.remove('active-pane-link'));
+
+document.getElementById(targetPageId).classList.add('active-view-pane');
+navigationElementAnchor.classList.add('active-pane-link');
+}
+
+// Quadrant Metrics Data Synchronization Linkage
+function syncQuadSliders(sliderElement, typeKey) {
+const parentPage = sliderElement.closest('.syllabus-document-page');
+sliderElement.nextElementSibling.innerText = sliderElement.value + "%";
+
+if(typeKey === 'comp') parentPage.querySelector('.val-comp').innerText = sliderElement.value + "%";
+if(typeKey === 'conf') parentPage.querySelector('.val-conf').innerText = sliderElement.value + "%";
+if(typeKey === 'stab') parentPage.querySelector('.val-stab').innerText = sliderElement.value + "%";
+if(typeKey === 'revi') parentPage.querySelector('.val-revi').innerText = sliderElement.value + "%";
+
+recalculateGlobalSyllabusTrack();
+}
+
+function recalculateGlobalSyllabusTrack() {
+const pages = document.querySelectorAll('.syllabus-document-page');
+let totalComp = 0;
+pages.forEach(page => {
+totalComp += parseInt(page.querySelector('.metric-slider-element:nth-of-type(1)').value || 0);
+});
+const avgScore = Math.round(totalComp / pages.length);
+document.getElementById('global-progress-display').innerText = avgScore + "%";
+}
+
+// Global Application Metrics Stores
+let metricQueriesCount = 12;
+let metricTopicsRevised = 8;
+let metricQuestionsSolved = 248;
+
+// Dynamic Speech Framework Settings
+const SpeechRecognitionEngine = window.SpeechRecognition || window.webkitSpeechRecognition;
+const nativeAudioSynthesizer = window.speechSynthesis;
+let isVoiceSystemActive = false;
+let browserSpeechCaptureInstance = null;
+
+if (SpeechRecognitionEngine) {
+browserSpeechCaptureInstance = new SpeechRecognitionEngine();
+browserSpeechCaptureInstance.continuous = false;
+browserSpeechCaptureInstance.lang = 'en-IN';
+browserSpeechCaptureInstance.interimResults = false;
+
+browserSpeechCaptureInstance.onstart = () => {
+isVoiceSystemActive = true;
+document.getElementById("vOuterRingNode").classList.add("active-pulse");
+document.getElementById("vCenterDotNode").classList.add("active-recording");
+document.getElementById("vCenterDotNode").innerHTML = "🛑";
+document.getElementById("voiceStatusLabelText").innerHTML = "<span style='color:var(--accent-voice); font-weight:600;'>Channel Listening</span><br>Speak your question aloud now...";
+};
+
+browserSpeechCaptureInstance.onresult = (event) => {
+const spokenTranscriptionResult = event.results[0][0].transcript;
+fireStudyPipeline(spokenTranscriptionResult);
+};
+
+browserSpeechCaptureInstance.onerror = (err) => {
+console.error("Audio capture error logged:", err.error);
+terminateVoiceSystemMode();
+};
+
+browserSpeechCaptureInstance.onend = () => {
+terminateVoiceSystemMode();
+};
+}
+
+function toggleVoiceSystemProcessingLink() {
+if (!browserSpeechCaptureInstance) {
+alert("Native Web Speech API tracking is not exposed inside this browser interface. Please use keyboard entry.");
+return;
+}
+if (isVoiceSystemActive) {
+browserSpeechCaptureInstance.stop();
+} else {
+nativeAudioSynthesizer.cancel();
+browserSpeechCaptureInstance.start();
+}
+}
+
+function terminateVoiceSystemMode() {
+isVoiceSystemActive = false;
+document.getElementById("vOuterRingNode").classList.remove("active-pulse");
+document.getElementById("vCenterDotNode").classList.remove("active-recording");
+document.getElementById("vCenterDotNode").innerHTML = "🎙️";
+document.getElementById("voiceStatusLabelText").innerHTML = "Voice Engine Standby.<br>Click to engage.";
+}
+
+function handleKeypressValidation(evt) {
+if(evt.key === 'Enter') {
+const payloadString = document.getElementById("userTextInputPayloadField").value;
+if(payloadString.trim() !== "") fireStudyPipeline(payloadString);
+}
+}
+
+// Advanced Dynamic Socratic Answer & Parsing Engine
+function fireStudyPipeline(userQuestionText) {
+const streamContainer = document.getElementById("studyRoomDialogueStreamContainer");
+const indicatorNode = document.getElementById("softDialogueProcessingIndicatorBlock");
+const primaryInputFieldNode = document.getElementById("userTextInputPayloadField");
+
+primaryInputFieldNode.value = "";
+
+// Append User Prompt Row
+streamContainer.innerHTML += `
+<div class="ledger-entry-block" style="margin-top: 32px;">
+<div class="ledger-user-prompt">Inquiry Vector <span>${userQuestionText}</span></div>
+<div class="ledger-separator-rule"></div>
+</div>
+`;
+streamContainer.scrollTop = streamContainer.scrollHeight;
+indicatorNode.style.display = "flex";
+
+// Increment metrics log dynamically
+metricQueriesCount++;
+document.getElementById("footer-count-queries").innerText = metricQueriesCount;
+
+setTimeout(() => {
+indicatorNode.style.display = "none";
+let responseHTML = "";
+let readAloudText = "";
+
+const cleanInput = userQuestionText.toLowerCase().trim();
+
+// SCENARIO A: User requests a direct testing module evaluation quiz
+if (cleanInput.includes("quiz") || cleanInput.includes("test")) {
+metricQuestionsSolved += 2;
+document.getElementById("global-questions-display").innerText = metricQuestionsSolved;
+document.getElementById("footer-count-mcqs").innerText = metricQuestionsSolved;
+
+responseHTML = `
+<div class="editorial-quiz-card">
+<span class="quiz-card-meta">Verification Assessment Module</span>
+<p class="quiz-question-statement">Which of the following bodies is explicitly responsible for maintaining the clean ledger framework monitoring climate targets across national matrices under the Paris Climate Accord?</p>
+
+<label class="quiz-option-node"><input type="radio" name="academicQuizOptionGroup"> A) UNEP Executive Secretariat Panel</label>
+<label class="quiz-option-node"><input type="radio" name="academicQuizOptionGroup" id="correctAcademicOptionNodeId"> B) UNFCCC Secretariat Framework Node</label>
+
+<div class="quiz-action-bar">
+<button class="editorial-verify-btn" onclick="verifyAcademicAssessmentSelectionState()">Verify Selection</button>
+<div class="quiz-feedback-output" id="assessmentFeedbackMessageOutputArea"></div>
+</div>
+</div>
+`;
+readAloudText = "I have initialized a targeted evaluation verification assessment card regarding active environmental treaty bodies.";
+}
+// SCENARIO B: Context match for Article 356 Constitutional Rules
+else if (cleanInput.includes("356") || cleanInput.includes("president's rule")) {
+metricTopicsRevised++;
+document.getElementById("footer-count-topics").innerText = metricTopicsRevised;
+
+responseHTML = `<strong>Constitutional Analysis — Article 356 (President's Rule):</strong> Empowers the Union Executive to assume structural administrative authority over a state if its local governance mechanism completely collapses.
+<br><br>
+<em>Core Safeguard Parameters:</em> Every single proclamation issued under Article 356 must be formally tabled and ratified by both houses of Parliament within a maximum window of <strong>two months</strong> via a baseline <strong>simple majority vote</strong>.`;
+readAloudText = "Article 356 deals with the imposition of President's Rule. It requires parliamentary authorization within a two-month period via a simple majority vote.";
+}
+// SCENARIO C: Context match for Environment, Ecology, or Climate targets
+else if (cleanInput.includes("ecology") || cleanInput.includes("climate") || cleanInput.includes("environment") || cleanInput.includes("paris")) {
+metricTopicsRevised++;
+document.getElementById("footer-count-topics").innerText = metricTopicsRevised;
+
+responseHTML = `<strong>Pillar Module 06 — Ecology & Climate Change Review:</strong> Focuses heavily on biodiversity indexes, greenhouse gas emissions profiles, and the historic <strong>Paris Agreement (COP21)</strong> framework targets.
+<br><br>
+The binding objective requires all global treaty signatory nodes to aggressively implement nation-level strategies to cap systemic global temperature increases to well below <strong>2°C</strong>, with an optimal strategic threshold targeting a maximum change of <strong>1.5°C</strong> compared to pre-industrial metrics.`;
+readAloudText = "Under Pillar Module 06, the primary target focuses on the Paris Agreement, which maps down rules to preserve global warming factors below 1.5 degrees Celsius.";
+}
+// SCENARIO D: Context match for Notes or dynamic document data download dumps
+else if (cleanInput.includes("notes") || cleanInput.includes("summary")) {
+responseHTML = `📄 <strong>Syllabus Summary Sheet Processed:</strong> High-density structured summaries linking today's focus subjects—Modern Indian History timelines, Legislative features, and Current updates—have been successfully parsed into your review repository queue.`;
+readAloudText = "Summary notes matching your tracking goals have been successfully generated.";
+}
+// SCENARIO E: Universal fallback engine that intelligently breaks down any open user question text parameters
+else {
+metricTopicsRevised++;
+document.getElementById("footer-count-topics").innerText = metricTopicsRevised;
+
+// Clean up text format for output display styling
+const presentationQueryText = userQuestionText.charAt(0).toUpperCase() + userQuestionText.slice(1);
+
+responseHTML = `<strong>Socratic Evaluation Engine Analysis Node:</strong>
+<br><br>
+Your inquiry targeting <em>"${presentationQueryText}"</em> has been processed into your active learning stream.
+<br><br>
+To cross-examine this concept against UPSC standards, this topic has been matched to your <strong>GS Paper I Core Pillar Ledger</strong>. You can run dedicated active recall drills, generate mock evaluation sets, or isolate key structural timelines for this specific query rows via the control options panel.`;
+readAloudText = `I have successfully analyzed your custom question regarding ${userQuestionText}, and have mapped it into your target study timeline framework parameters.`;
+}
+
+// Render AI Answer Bubble Block
+streamContainer.innerHTML += `
+<div class="ledger-entry-block">
+<div class="ledger-tutor-response">${responseHTML}</div>
+</div>
+`;
+streamContainer.scrollTop = streamContainer.scrollHeight;
+
+// Execute speech engine synthesis vocalization out loud
+if (nativeAudioSynthesizer) {
+nativeAudioSynthesizer.cancel();
+const vocalSpeechPacket = new SpeechSynthesisUtterance(readAloudText);
+
+const registryVoices = nativeAudioSynthesizer.getVoices();
+const preferredRegionalVoice = registryVoices.find(v => v.lang.includes('IN') || v.lang.includes('GB'));
+if (preferredRegionalVoice) vocalSpeechPacket.voice = preferredRegionalVoice;
+
+vocalSpeechPacket.rate = 0.95;
+
+vocalSpeechPacket.onstart = () => {
+document.getElementById("voiceStatusLabelText").innerHTML = "<span style='color:var(--status-pass); font-weight:600;'>🔊 Synthesizing Audio</span><br>Streaming explanation voice row out loud...";
+};
+vocalSpeechPacket.onend = () => {
+document.getElementById("voiceStatusLabelText").innerHTML = "Voice Engine Standby.<br>Click to engage.";
+};
+
+nativeAudioSynthesizer.speak(vocalSpeechPacket);
+}
+}, 800);
+}
+
+function verifyAcademicAssessmentSelectionState() {
+const isOptionCorrect = document.getElementById("correctAcademicOptionNodeId").checked;
+const feedbackOutputBlock = document.getElementById("assessmentFeedbackMessageOutputArea");
+if(isOptionCorrect) {
+feedbackOutputBlock.style.color = "var(--status-pass)";
+feedbackOutputBlock.innerHTML = "✓ Correct. The UNFCCC Secretariat maintains structural validation operations.";
+} else {
+feedbackOutputBlock.style.color = "var(--status-review)";
+feedbackOutputBlock.innerHTML = "✕ Incorrect. Option B is correct. The UNFCCC operates the compliance verification machinery.";
+}
+}
+</script>
+</body>
+</html>
