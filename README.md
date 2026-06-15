@@ -62,7 +62,7 @@ No searching. No scrolling. Just learning.
 
 ## 🚀 Prototype
 
- **https://raguram-n.github.io/Exam_Buddy_proposal/**
+ **Desktop View - https://raguram-n.github.io/Exam_Buddy_proposal/**
 
 ---
 
