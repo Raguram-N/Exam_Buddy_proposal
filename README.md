@@ -39,11 +39,11 @@ ExamBuddy AI turns preparation into a conversation.
 Student : "Explain Fundamental Rights for UPSC Prelims."
 AI      : Gives a concise, exam-oriented explanation.
 
-Student : "Now give me 5 MCQs on this topic."
-AI      : Generates a quiz instantly.
+Student : "Now test me with 5 MCQs on this topic."
+AI      : Ask MCQ 1 by 1 with respet to topic and pyq instantly.
 ```
 
-No searching. No scrolling. Just learning.
+> **No searching. No scrolling. Just learning.**
 
 ---
 
