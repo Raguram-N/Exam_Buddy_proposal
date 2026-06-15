@@ -165,11 +165,3 @@ We are actively building the team. If you want to work on a technically interest
 ## 👤 Author
 
 **Raguram Narayanaswamy** 
-
----
-
-## 📬 Get Involved
-
-Whether you're an **Techie** looking to partner — we'd love to connect.
-
-> *ExamBuddy AI — Talk. Learn. Revise.*
