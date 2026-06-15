@@ -15,7 +15,7 @@ Instead of searching through books, PDFs, and videos, students simply talk to th
 
 ---
 
-## ❗ The Problem
+## 🤖 The Problem
 
 Competitive exam preparation in India is broken in two specific ways:
 
