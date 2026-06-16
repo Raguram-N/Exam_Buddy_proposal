@@ -222,6 +222,10 @@ Even modest adoption can create a sustainable and scalable business.
 
 ---
 
+<img src="Tech flow.png" width="100%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+---
+
 # 🤝 We're Looking For
 
 We are actively building the team.
