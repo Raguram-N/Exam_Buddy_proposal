@@ -139,9 +139,9 @@ AI      : Generates topic-specific exam questions instantly.
 
 ## 🚀 Prototype
 
-**Desktop View**
+- Link : [https://raguram-n.github.io/Exam_Buddy_proposal/](https://raguram-n.github.io/Exam_Buddy_proposal/)
 
-[https://raguram-n.github.io/Exam_Buddy_proposal/](https://raguram-n.github.io/Exam_Buddy_proposal/)
+- Login credentials are dummy (you can enter any value)
 
 ---
 
