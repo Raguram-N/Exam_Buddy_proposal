@@ -189,40 +189,57 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 ---
 
+## 📊 Market Size Proof
+
+India has a massive and recurring education market, where students need continuous learning, revision, and exam preparation support every single day.
+
+
+### 📌 Market Overview
+
+* **School Students:** 24 Crore+ (240M+) enrolled learners
+* **Civil Services aspirants:** 10 Lakh+ high-intent aspirants every year
+* **other Competitive Exams:** 2–3 Crore (20–30M) annual registrations across SSC, Banking, Railways, and State PSCs
+
+### 🎯 Target Market (SAM)
+
+Our Serviceable Addressable Market (SAM) is: **~4.5 Crore (45M) active learners**
+
+This includes:
+
+* School students who study daily
+* Competitive exam aspirants preparing year-round
+
+---
+
 ## 💰 Business Model
 
-### B2C — Individual Learners
-
-| Plan    | Price      | Includes                                                                            |
-| ------- | ---------- | ----------------------------------------------------------------------------------- |
-| Free    | ₹0         | Limited voice queries, basic explanations, and trial access                         |
-| Premium | ₹199/month | Voice learning, unlimited MCQs, revision notes, summaries, and personalized support |
+- **B2B — Schools & Coaching Institutes**
+- **B2C — Individual Learners**
 
 ---
 
-### B2B — Schools & Coaching Institutes
+## 💰 Revenue Potential (2% Market Capture)
 
-| Plan    | Price         | Best For                                                      |
-| ------- | ------------- | ------------------------------------------------------------- |
-| Starter | ₹10,000/month | Up to 200 students                                            |
-| Growth  | ₹25,000/month | Up to 750 students with analytics and custom content          |
-| Scale   | ₹50,000/month | Unlimited students, white-label deployment, dedicated support |
+If we capture just **2% of our SAM within 24 months**, the revenue model is as follows:
+
+- **🎓 Competitive Exam Segment** -  400,000 users × ₹999/year = ₹40 Crores
+
+- **📚 School Student Segment** -  500,000 users × ₹799/year = ₹40 Crores
+
+### 🚀 Total Revenue Potential 
+
+> **🌟 Total Annual Revenue = ₹80 Crores**
+
 
 ---
 
-## 📈 Market Opportunity
+## 🧠 Key Insight
 
-India has over **250 million school students** and **tens of millions of competitive exam aspirants**, creating one of the world's largest education markets.
+Even a small penetration of a highly recurring education market creates a scalable and sustainable revenue model due to:
 
-Even modest adoption can create a sustainable and scalable business.
-
-| Conversion | Paid Users | Monthly Revenue | Annual Revenue |
-| ---------- | ---------- | --------------- | -------------- |
-| 1%         | 1,000      | ₹1.99 Lakhs     | ₹23.88 Lakhs   |
-| 5%         | 5,000      | ₹9.95 Lakhs     | ₹1.19 Crores   |
-| 10%        | 10,000     | ₹19.9 Lakhs     | ₹2.38 Crores   |
-
-> A single Growth-tier institute partnership (₹25,000/month) equals approximately 125 individual Premium subscribers.
+* Daily study behavior
+* Continuous exam cycles
+* High willingness to pay for time-saving learning tools
 
 ---
 
