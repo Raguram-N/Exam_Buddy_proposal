@@ -1,6 +1,6 @@
 # 🎓 ExamBuddy AI
 
-**Voice-first AI learning platform for students and competitive exam aspirants in India.**
+**Your 24/7 AI voice teacher for school students and competitive exam aspirants.**
 
 > ✨ Ask questions out loud — anywhere, anytime.
 
