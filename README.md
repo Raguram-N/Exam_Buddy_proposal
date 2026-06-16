@@ -1,5 +1,3 @@
-Here's a polished copy-paste-ready README version.
-
 # 🎓 ExamBuddy AI
 
 **Voice-first AI learning platform for students and competitive exam aspirants in India.**
@@ -20,27 +18,29 @@ Instead of searching through textbooks, PDFs, videos, and notes, learners simply
 
 ---
 
-# 🤖 The Problem
+## 🤖 The Problem
 
-Learning in India is still heavily dependent on textbooks, videos, coaching classes, and endless searching.
+Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.
 
-### ⏳ Valuable Learning Time Is Lost
+### 📚 School Students Struggle With Scattered Learning Resources
 
-Commutes, walks, exercise sessions, and daily chores consume hours that could otherwise be used for learning. Most educational tools require constant screen attention.
+School students often jump between textbooks, notes, YouTube videos, coaching materials, websites, and question banks to understand a single concept. Finding the right explanation can take longer than learning the topic itself.
 
-### 🔍 Learning Resources Are Fragmented
+### ⏳ Competitive Exam Aspirants Lose Valuable Learning Time
 
-Students switch between textbooks, notes, YouTube videos, coaching materials, websites, and question banks just to find answers.
+Many aspirants are working professionals balancing jobs, family responsibilities, and exam preparation. Hours spent commuting, walking, exercising, or doing daily chores could be used for revision, but most learning platforms require constant screen attention.
 
 ### 🧠 General AI Isn't Syllabus-Aware
 
-Most AI assistants provide broad internet answers but do not understand school curricula, competitive exam syllabi, previous-year questions, or exam-specific depth requirements.
+Most AI assistants provide generic internet answers. They do not understand school curricula, board exam requirements, TNPSC syllabi, UPSC exam patterns, or the depth expected in competitive examinations.
 
-### 👨‍🏫 Personalized Guidance Is Expensive
+### 👨‍🏫 Personalized Guidance Is Not Accessible to Everyone
 
-Many students do not have access to private tutors or one-to-one mentorship.
+One-to-one tutoring and mentorship can be expensive and unavailable to many students. As a result, learners often study without immediate feedback, personalized explanations, or targeted practice.
 
-**The result:** students spend more time searching than learning.
+### 🎯 The Result
+
+Students spend more time searching for information than actually learning it. Valuable learning opportunities are lost, revision becomes inefficient, and preparation often feels overwhelming.
 
 ---
 
@@ -190,12 +190,13 @@ Even modest adoption can create a sustainable and scalable business.
 
 # 📍 Current Stage
 
-* ✅ Architecture Defined
-* ✅ MVP In Development
-* ✅ Voice AI Integration In Progress
-* ✅ RAG Pipeline In Progress
-* ⏳ Beta Testing With Students
-* ⏳ Product Validation
+* ⏳ Concept Validation - Process
+* ⏳ RAG Pipeline - Planning Stage
+* ⏳ MVP - Planning Stage
+* ⏳ Voice AI Integration - Planning Stage
+* ⏳ Core System Development - Planning Stage
+* ⏳ Beta Testing With Students - Planning Stage
+* ⏳ Product Validation - Planning Stage
 
 ---
 
