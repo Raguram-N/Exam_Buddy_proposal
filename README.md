@@ -137,7 +137,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## 🧠 LLM Routing Logic
+## 🧠 LLM Routing Logic - Cost Optimized
 
 **Llama (default):**
 - definitions
