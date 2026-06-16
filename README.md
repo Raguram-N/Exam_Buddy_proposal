@@ -127,13 +127,14 @@ AI      : Generates topic-specific exam questions instantly.
 
 ## 🤖 Core AI Stack
 
-| Layer                       | API                                       |
-| --------------------------- | ----------------------------------------- |
-| Speech-to-Text              | Whisper                                   |
-| Primary LLM - 80%           | Meta Llama                                |
-| Fallback LLM -  20%         | OpenAI GPT                                |
-| Text-to-Speech - Standard   |  Deepgram Aura                            |
-| Text-to-Speech - Premium    |  ElevenLabs Streaming                     |
+| Layer                                         | Component            | Provider   |
+| --------------------------------------------- | -------------------- | ---------- |
+| 🎙 Speech-to-Text                             | Whisper              | OpenAI     |
+| 🧠 Primary LLM (factual + basic queries)      | Llama 3 / Meta Llama | Meta       |
+| 🧠 Advanced LLM (reasoning + complex queries) | GPT-4.1 / OpenAI GPT | OpenAI     |
+| 🔊 Text-to-Speech (standard)                  | Aura TTS             | Deepgram   |
+| 🔊 Text-to-Speech (premium voice)             | Streaming TTS        | ElevenLabs |
+
 
 ---
 
