@@ -135,6 +135,22 @@ AI      : Generates topic-specific exam questions instantly.
 | 🔊 Text-to-Speech (standard)                  | Aura TTS             | Deepgram   |
 | 🔊 Text-to-Speech (premium voice)             | Streaming TTS        | ElevenLabs |
 
+---
+
+## 🧠 LLM Routing Logic
+
+**Llama (default):**
+- definitions
+- NCERT facts
+- simple explanations
+- revision questions
+
+**GPT (fallback / escalation):**
+- multi-step reasoning
+- confusing student doubts
+- mixed-topic questions
+- high-accuracy exam answers
+
 
 ---
 
