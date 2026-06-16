@@ -94,7 +94,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## ⚙️ How we unique from rest
+## ⚙️ Why We’re Different from rest
 
 - 🎙 Voice Q&A                   
 - 📝 Knowledge tester             
