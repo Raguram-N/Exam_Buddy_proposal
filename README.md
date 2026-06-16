@@ -108,6 +108,22 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
+# 🏗️ Tech Architecture
+
+<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+
+| Layer           | Details                                                                             |
+| --------------- | ----------------------------------------------------------------------------------- |
+| 🎙 Voice Layer  | Speech-to-text input and text-to-speech output with low latency.                    |
+| 🧠 LLM Core     | Large Language Model optimized for concise educational responses.                   |
+| 📚 RAG Pipeline | Vector database containing NCERT, Samacheer, PYQs, and trusted educational content. |
+| 📝 MCQ Engine   | Structured question generation with difficulty levels and explanations.             |
+| 👤 User Memory  | Tracks progress, weak areas, and learning history.                                  |
+| 🔗 Backend API  | Session management, content retrieval, subscriptions, and analytics.                |
+
+---
+
 # 🚀 Prototype
 
 **Desktop View**
@@ -158,24 +174,6 @@ All AI responses are grounded in verified and syllabus-aligned content.
 * Skill Development Programs
 * Regional Language Learning Support
 
----
-
-# 🏗️ Tech Architecture
-
-<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
-
-
-| Layer           | Details                                                                             |
-| --------------- | ----------------------------------------------------------------------------------- |
-| 🎙 Voice Layer  | Speech-to-text input and text-to-speech output with low latency.                    |
-| 🧠 LLM Core     | Large Language Model optimized for concise educational responses.                   |
-| 📚 RAG Pipeline | Vector database containing NCERT, Samacheer, PYQs, and trusted educational content. |
-| 📝 MCQ Engine   | Structured question generation with difficulty levels and explanations.             |
-| 👤 User Memory  | Tracks progress, weak areas, and learning history.                                  |
-| 🔗 Backend API  | Session management, content retrieval, subscriptions, and analytics.                |
-
-
-  
 ---
 
 # 💰 Business Model
