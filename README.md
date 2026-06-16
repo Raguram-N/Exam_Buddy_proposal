@@ -121,7 +121,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ## 🏗️ Tech Architecture
 
-<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+<img src="tech flow 1.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 ---
 
