@@ -2,7 +2,7 @@
 
 **Your 24/7 AI voice teacher for school students and competitive exam aspirants.**
 
-> ✨ Ask questions out loud — anywhere, anytime.
+> 🌟 **Ask questions out loud — anywhere, anytime.**
 
 ---
 
@@ -18,7 +18,7 @@ Instead of searching through textbooks, PDFs, videos, and notes, learners simply
 
 ---
 
-## 🤖 The Problem 
+## ✨ The Problem 
 
 > **Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.**
 
@@ -86,7 +86,7 @@ AI      : Gives a concise, exam-oriented explanation.
 Student : Now test me with 5 PYQ-style MCQs.
 AI      : Generates topic-specific exam questions instantly.
 ```
-> **Just conversation. Just learning.**
+> **🌟 Just ask. Just learn.**
 
 </td>
 </tr>
@@ -94,7 +94,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-# ✨ Key Features
+# 🤖 Key Features
 
 | Feature                         | Description                                                          |
 | ------------------------------- | -------------------------------------------------------------------- |
