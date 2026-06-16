@@ -134,6 +134,7 @@ AI      : Generates topic-specific exam questions instantly.
 | 🧠 Advanced LLM (reasoning + complex queries) | GPT-4.1 / OpenAI GPT | OpenAI     |
 | 🔊 Text-to-Speech (standard)                  | Aura TTS             | Deepgram   |
 | 🔊 Text-to-Speech (premium voice)             | Streaming TTS        | ElevenLabs |
+| 🔄 Real-Time Layer                            |  WebSockets          | FastAPI    |
 
 ---
 
