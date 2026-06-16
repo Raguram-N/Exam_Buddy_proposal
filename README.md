@@ -213,18 +213,6 @@ Even modest adoption can create a sustainable and scalable business.
 
 ---
 
-# 📍 Current Stage
-
-* ⏳ Concept Validation - In Process
-* ⏳ RAG Pipeline - Not Yet started
-* ⏳ MVP - Not Yet started
-* ⏳ Voice AI Integration - Not Yet started
-* ⏳ Core System Development - Not Yet started
-* ⏳ Beta Testing With Students - Not Yet started
-* ⏳ Product Validation - Not Yet started
-
----
-
 # 🤝 We're Looking For
 
 We're building this in two stages — a lean core team to prove the concept, then a fuller team once we have traction and funding to scale.
