@@ -247,5 +247,3 @@ To build India's most accessible AI teacher that helps learners study through co
 # 👤 Author
 
 **Raguram Narayanaswamy**
-
-One recommendation: for your first MVP and investor conversations, position ExamBuddy as **"UPSC/TNPSC first, school-ready architecture"** rather than claiming to serve all segments immediately. It makes the roadmap look more credible and achievable.
