@@ -32,17 +32,17 @@ Learning today is fragmented, time-consuming, and often inaccessible when studen
 <td width="60%" valign="top">
 
 
-- **Students struggle with scattered resources**
-Learners switch between textbooks, notes, videos, websites, and coaching materials, wasting time finding the right explanation.
+- **Students struggle with scattered resources:**  
+  Learners switch between textbooks, notes, videos, websites, and coaching materials, wasting time finding the right explanation.
 
-- **Aspirants lose valuable time**
-Working professionals and busy students struggle to use commuting or daily routines for revision due to screen-based learning limits.
+- **Aspirants lose valuable time:**
+  Working professionals and busy students struggle to use commuting or daily routines for revision due to screen-based learning limits.
 
-- **General AI lacks syllabus focus**
-Most AI tools give generic answers without aligning to school boards, TNPSC, UPSC, or exam-specific patterns.
+- **General AI lacks syllabus focus:**
+ Most AI tools give generic answers without aligning to school boards, TNPSC, UPSC, or exam-specific patterns.
 
-- **Personalized guidance is limited**
-Many learners cannot access affordable one-to-one tutoring, leading to lack of feedback and targeted practice.
+- **Personalized guidance is limited:**
+ Many learners cannot access affordable one-to-one tutoring, leading to lack of feedback and targeted practice.
 
 </td>
 </tr>
