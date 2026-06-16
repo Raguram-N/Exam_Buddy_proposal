@@ -162,6 +162,7 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 # 🏗️ Tech Architecture
 
+
 | Layer           | Details                                                                             |
 | --------------- | ----------------------------------------------------------------------------------- |
 | 🎙 Voice Layer  | Speech-to-text input and text-to-speech output with low latency.                    |
@@ -170,6 +171,13 @@ All AI responses are grounded in verified and syllabus-aligned content.
 | 📝 MCQ Engine   | Structured question generation with difficulty levels and explanations.             |
 | 👤 User Memory  | Tracks progress, weak areas, and learning history.                                  |
 | 🔗 Backend API  | Session management, content retrieval, subscriptions, and analytics.                |
+
+
+  
+<img src="Tech flow.png" width="80%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+
+
 
 ---
 
@@ -219,10 +227,6 @@ Even modest adoption can create a sustainable and scalable business.
 * ⏳ Core System Development - Not Yet started
 * ⏳ Beta Testing With Students - Not Yet started
 * ⏳ Product Validation - Not Yet started
-
----
-
-<img src="Tech flow.png" width="100%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
 ---
 
