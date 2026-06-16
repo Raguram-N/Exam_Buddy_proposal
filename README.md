@@ -56,6 +56,15 @@ Students spend more time searching for information than actually learning it. Va
 
 # ✅ The Solution
 
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
+
+<img src="19.png" width="100%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+</td>
+<td width="60%" valign="top">
+
 ExamBuddy AI transforms learning into a conversation.
 
 ### School Student
@@ -78,7 +87,11 @@ Student : Now test me with 5 PYQ-style MCQs.
 AI      : Generates topic-specific exam questions instantly.
 ```
 
-> No searching. No scrolling. Just learning.
+</td>
+</tr>
+</table>
+
+> Just conversation. Just learning.
 
 ---
 
