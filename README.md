@@ -249,8 +249,6 @@ We're building this in two stages — a lean core team to prove the concept, the
 | DevOps/Cloud Engineers | Infrastructure scaling, latency optimization, cost management as usage grows |
 | QA/Test Engineers | Educational accuracy across subjects/exams, AI evaluation, continuous content QA |
 
-If you're excited about building technology that can improve learning outcomes for millions of students, we'd love to connect — starting with the Phase 1 roles above.
-
 ---
 
 ## 🌟 Vision
