@@ -6,7 +6,7 @@
 
 ---
 
-# 📌 What is ExamBuddy AI?
+## 📌 What is ExamBuddy AI?
 
 ExamBuddy AI is a voice-based AI learning companion designed for learners across India.
 
@@ -54,7 +54,7 @@ Students spend more time searching for information than actually learning it. Va
 
 ---
 
-# ✅ The Solution
+## ✅ The Solution
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-# 🤖 Key Features
+## 🤖 Key Features
 
 | Feature                         | Description                                                          |
 | ------------------------------- | -------------------------------------------------------------------- |
@@ -108,10 +108,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-# 🏗️ Tech Architecture
-
-<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
-
+## 🔑 Key Layer
 
 | Layer           | Details                                                                             |
 | --------------- | ----------------------------------------------------------------------------------- |
@@ -124,7 +121,24 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-# 🚀 Prototype
+## 🏗️ Tech Architecture
+
+<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
+---
+
+## 🤝 API partner
+
+| Layer                       | API                                       |
+| --------------------------- | ----------------------------------------- |
+| Speech-to-Text              | Whisper                                   |
+| Primary LLM - 80%           | Meta Llama                                |
+| Fallback LLM -  20%         | OpenAI GPT                                |
+| Text-to-Speech              | Google WaveNet                            |
+
+---
+
+## 🚀 Prototype
 
 **Desktop View**
 
@@ -132,7 +146,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-# 📚 Trusted Knowledge Sources
+## 📚 Trusted Knowledge Sources
 
 All AI responses are grounded in verified and syllabus-aligned content.
 
@@ -154,9 +168,9 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 ---
 
-# 🎯 Target Users
+## 🎯 Target Users
 
-## Initial Focus
+### Initial Focus
 
 * Schools (Classes 6–12)
 * TNPSC Aspirants
@@ -165,7 +179,7 @@ All AI responses are grounded in verified and syllabus-aligned content.
 * Banking Aspirants
 * Railway Aspirants
 
-## Future Expansion
+### Future Expansion
 
 * NEET
 * JEE
@@ -176,9 +190,9 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 ---
 
-# 💰 Business Model
+## 💰 Business Model
 
-## B2C — Individual Learners
+### B2C — Individual Learners
 
 | Plan    | Price      | Includes                                                                            |
 | ------- | ---------- | ----------------------------------------------------------------------------------- |
@@ -187,7 +201,7 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 ---
 
-## B2B — Schools & Coaching Institutes
+### B2B — Schools & Coaching Institutes
 
 | Plan    | Price         | Best For                                                      |
 | ------- | ------------- | ------------------------------------------------------------- |
@@ -197,7 +211,7 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 ---
 
-# 📈 Market Opportunity
+## 📈 Market Opportunity
 
 India has over **250 million school students** and **tens of millions of competitive exam aspirants**, creating one of the world's largest education markets.
 
@@ -213,11 +227,11 @@ Even modest adoption can create a sustainable and scalable business.
 
 ---
 
-# 🤝 We're Looking For
+## 🤝 We're Looking For
 
 We're building this in two stages — a lean core team to prove the concept, then a fuller team once we have traction and funding to scale.
 
-## Phase 1 — MVP Team (Now)
+### Phase 1 — MVP Team (Now)
 
 | Role | Focus Area |
 |------|------------|
@@ -226,7 +240,7 @@ We're building this in two stages — a lean core team to prove the concept, the
 
 ---
 
-## Phase 2 — Live Production Team (Post-MVP / Post-Funding)
+### Phase 2 — Live Production Team (Post-MVP / Post-Funding)
 
 | Role | Focus Area |
 |------|------------|
@@ -240,12 +254,12 @@ If you're excited about building technology that can improve learning outcomes f
 
 ---
 
-# 🌟 Vision
+## 🌟 Vision
 
 To build India's most accessible AI teacher that helps learners study through conversation—whether they are preparing for a Class 6 science test, a Class 12 board examination, or the UPSC Civil Services Examination.
 
 ---
 
-# 👤 Author
+## 👤 Author
 
 **Raguram Narayanaswamy**
