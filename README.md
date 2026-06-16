@@ -132,7 +132,7 @@ AI      : Generates topic-specific exam questions instantly.
 | Speech-to-Text              | Whisper                                   |
 | Primary LLM - 80%           | Meta Llama                                |
 | Fallback LLM -  20%         | OpenAI GPT                                |
-| Text-to-Speech              | Google WaveNet                            |
+| Text-to-Speech              | ElevenLabs Streaming / Deepgram Aura      |
 
 ---
 
