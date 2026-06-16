@@ -94,17 +94,15 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## 🤖 Key Features
+## ⚙️ How we unique from rest
 
-| Feature                         | Description                                                          |
-| ------------------------------- | -------------------------------------------------------------------- |
-| 🎙 Voice Q&A                    | Ask questions naturally using your voice and receive spoken answers. |
-| 📝 MCQ Generator                | Instantly generate topic-wise practice questions with explanations.  |
-| 📚 Topic Summaries              | Revision-ready summaries in under 60 seconds.                        |
-| 📄 Revision Notes               | AI-generated notes tailored to the learner's level and exam.         |
-| 🎯 Adaptive Learning            | AI tracks learning patterns and adjusts depth over time.             |
-| 🔍 Source-Grounded Answers      | Responses anchored in trusted educational content and PYQs.          |
-| 🧠 Personalized Learning Memory | Remembers covered topics and identifies weak areas.                  |
+- 🎙 Voice Q&A                   
+- 📝 Knowledge tester             
+- 📚 Quick Summaries              
+- 📄 Revision Notes               
+- 🎯 Adaptive Learning            
+- 🔍 Source-Grounded Answers     
+- 🧠 Personalized Learning Memory 
 
 ---
 
@@ -127,7 +125,7 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## 🤝 API partner
+## 🤖 Core AI Stack
 
 | Layer                       | API                                       |
 | --------------------------- | ----------------------------------------- |
