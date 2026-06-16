@@ -227,17 +227,28 @@ Even modest adoption can create a sustainable and scalable business.
 
 # 🤝 We're Looking For
 
-We are actively building the team.
+We're building this in two stages — a lean core team to prove the concept, then a fuller team once we have traction and funding to scale.
 
-If you're excited about building technology that can improve learning outcomes for millions of students, we'd love to connect.
+## Phase 1 — MVP Team (Now)
 
-| Role                     | Focus Area                                          |
-| ------------------------ | --------------------------------------------------- |
-| AI / ML Engineers        | RAG systems, prompt engineering, voice optimization |
-| Full Stack Developers    | APIs, real-time audio streaming, subscriptions      |
-| UI/UX Designers          | Mobile-first learning experiences and accessibility |
-| DevOps / Cloud Engineers | Infrastructure, scaling, cost optimization          |
-| QA / Test Engineers      | Educational accuracy and AI evaluation              |
+| Role | Focus Area |
+|------|------------|
+| AI/ML Engineer | RAG pipeline (content ingestion, embeddings, retrieval), prompt design for explanations and MCQ generation, syllabus accuracy evaluation |
+| Full Stack Developer | Backend APIs, auth and session management, third-party voice (STT/TTS) integration, minimal app/web shell |
+
+---
+
+## Phase 2 — Live Production Team (Post-MVP / Post-Funding)
+
+| Role | Focus Area |
+|------|------------|
+| AI/ML Engineers | Multi-subject and multi-exam RAG scaling, voice optimization, adaptive learning models |
+| Full Stack Developers | Real-time audio streaming at scale, subscriptions and billing, multi-platform APIs |
+| UI/UX Designers | Mobile-first learning experiences, accessibility, regional language support |
+| DevOps/Cloud Engineers | Infrastructure scaling, latency optimization, cost management as usage grows |
+| QA/Test Engineers | Educational accuracy across subjects/exams, AI evaluation, continuous content QA |
+
+If you're excited about building technology that can improve learning outcomes for millions of students, we'd love to connect — starting with the Phase 1 roles above.
 
 ---
 
