@@ -18,25 +18,35 @@ Instead of searching through textbooks, PDFs, videos, and notes, learners simply
 
 ---
 
-## 🤖 The Problem
+## 🤖 The Problem 
 
-Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.
+> **Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.**
 
-### 📚 School Students Struggle With Scattered Learning Resources
+<table>
+<tr>
+<td width="50%" align="center" valign="middle">
 
-School students often jump between textbooks, notes, YouTube videos, coaching materials, websites, and question banks to understand a single concept. Finding the right explanation can take longer than learning the topic itself.
+<img src="Problem.png" width="100%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
 
-### ⏳ Competitive Exam Aspirants Lose Valuable Learning Time
+</td>
+<td width="60%" valign="top">
 
-Many aspirants are working professionals balancing jobs, family responsibilities, and exam preparation. Hours spent commuting, walking, exercising, or doing daily chores could be used for revision, but most learning platforms require constant screen attention.
 
-### 🧠 General AI Isn't Syllabus-Aware
+- **Students struggle with scattered resources**
+Learners switch between textbooks, notes, videos, websites, and coaching materials, wasting time finding the right explanation.
 
-Most AI assistants provide generic internet answers. They do not understand school curricula, board exam requirements, TNPSC syllabi, UPSC exam patterns, or the depth expected in competitive examinations.
+- **Aspirants lose valuable time**
+Working professionals and busy students struggle to use commuting or daily routines for revision due to screen-based learning limits.
 
-### 👨‍🏫 Personalized Guidance Is Not Accessible to Everyone
+- **General AI lacks syllabus focus**
+Most AI tools give generic answers without aligning to school boards, TNPSC, UPSC, or exam-specific patterns.
 
-One-to-one tutoring and mentorship can be expensive and unavailable to many students. As a result, learners often study without immediate feedback, personalized explanations, or targeted practice.
+- **Personalized guidance is limited**
+Many learners cannot access affordable one-to-one tutoring, leading to lack of feedback and targeted practice.
+
+</td>
+</tr>
+</table>
 
 ### 🎯 The Result
 
