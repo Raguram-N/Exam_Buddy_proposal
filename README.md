@@ -20,7 +20,7 @@ Instead of searching through textbooks, PDFs, videos, and notes, learners simply
 
 ## ✨ The Problem 
 
-> **Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.**
+Learning today is fragmented, time-consuming, and often inaccessible when students need help the most.
 
 <table>
 <tr>
