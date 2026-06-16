@@ -190,7 +190,7 @@ Even modest adoption can create a sustainable and scalable business.
 
 # 📍 Current Stage
 
-* ⏳ Concept Validation - Process
+* ⏳ Concept Validation - In Process
 * ⏳ RAG Pipeline - Planning Stage
 * ⏳ MVP - Planning Stage
 * ⏳ Voice AI Integration - Planning Stage
