@@ -162,6 +162,8 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 # 🏗️ Tech Architecture
 
+<img src="Tech flow - edited.png" width="90%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
+
 
 | Layer           | Details                                                                             |
 | --------------- | ----------------------------------------------------------------------------------- |
@@ -174,11 +176,6 @@ All AI responses are grounded in verified and syllabus-aligned content.
 
 
   
-<img src="Tech flow.png" width="80%" style="border-radius:10px; box-shadow: 0px 0px 8px rgba(0,0,0,0.2);" />
-
-
-
-
 ---
 
 # 💰 Business Model
