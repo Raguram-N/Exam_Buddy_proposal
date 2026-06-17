@@ -239,17 +239,58 @@ This includes:
 
 ---
 
-## 💰 Revenue Potential (2% Market Capture)
+## 💰 Revenue Potential & Growth Roadmap
 
-If we capture just **2% of our SAM within 24 months**, the revenue model is as follows:
+### 🚀 Initial School Collaboration Phase
 
-- **🎓 Competitive Exam Segment** -  400,000 users × ₹999/year = ₹40 Crores
+Our go-to-market strategy begins with direct school partnerships.
 
-- **📚 School Student Segment** -  500,000 users × ₹799/year = ₹40 Crores
+* 🏫 5 Partner Schools
+* 👨‍🎓 Average 2,000 Students per School
+* 📚 Total Students Reached: 10,000
 
-### 🚀 Total Revenue Potential 
+Assuming an annual subscription of ₹799 per student:
 
-> **🌟 Total Annual Revenue = ₹80 Crores**
+**10,000 Students × ₹799/year = ₹79.9 Lakhs Annual Revenue**
+
+This phase allows us to validate product-market fit, improve learning outcomes, and build case studies with real student usage data.
+
+---
+
+### 📈 Expansion Phase
+
+After successful deployment across initial partner schools, ExamBuddy AI can expand through:
+
+* Additional school partnerships
+* District-wide deployments
+* State board curriculum coverage
+* Competitive exam preparation segments
+* B2B institutional licensing
+
+---
+
+### 🌟 Long-Term Revenue Potential
+
+Even a small market penetration creates a significant opportunity.
+
+#### 🎓 Competitive Exam Segment
+
+400,000 Users × ₹999/year
+
+= **₹40 Crores Annual Revenue**
+
+#### 📚 School Student Segment
+
+500,000 Users × ₹799/year
+
+= **₹40 Crores Annual Revenue**
+
+### 💰 Total Annual Revenue Potential
+
+🚀 **₹80 Crores Annual Revenue**
+
+This projection represents only a small percentage of the addressable market and demonstrates the scalability of a voice-first, syllabus-grounded AI learning platform.
+
 
 
 ---
