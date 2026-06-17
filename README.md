@@ -32,17 +32,10 @@ Learning today is fragmented, time-consuming, and often inaccessible when studen
 <td width="60%" valign="top">
 
 
-- **Students struggle with scattered resources:**  
-  Learners switch between textbooks, notes, videos, websites, and coaching materials, wasting time finding the right explanation.
-
-- **Aspirants lose valuable time:**
-  Working professionals and busy students struggle to use commuting or daily routines for revision due to screen-based learning limits.
-
-- **General AI lacks syllabus focus:**
- Most AI tools give generic answers without aligning to school boards, TNPSC, UPSC, or exam-specific patterns.
-
-- **Personalized guidance is limited:**
- Many learners cannot access affordable one-to-one tutoring, leading to lack of feedback and targeted practice.
+- **Scattered resources** — Learners switch between textbooks, notes, videos, websites, and coaching materials, wasting time finding the right explanation.
+- **Lost time** — Working professionals and busy students struggle to use commuting or daily routines for revision because most tools require a screen.
+- **No syllabus focus** — Most AI tools give generic answers without aligning to school boards, TNPSC, UPSC, or exam-specific patterns.
+- **Limited personal guidance** — Affordable one-to-one tutoring is out of reach for most learners, leaving them without feedback or targeted practice.
 
 </td>
 </tr>
@@ -94,15 +87,25 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## ⚙️ Why We’re Different from rest
+## ⚙️ Why We're Different
 
-- 🎙 Voice Q&A                   
-- 📝 Knowledge tester             
-- 📚 Quick Summaries              
-- 📄 Revision Notes               
-- 🎯 Adaptive Learning            
-- 🔍 Source-Grounded Answers     
-- 🧠 Personalized Learning Memory 
+Most learning tools fall into one of three buckets, and each has a real gap that ExamBuddy AI is built to close:
+
+- **General AI chatbots** (ChatGPT, Gemini, custom GPTs) answer fluently, but aren't grounded in a specific board's syllabus — explanations can drift from what's actually taught, and there's no built-in exam-format practice.
+- **Video-based edtech platforms** (BYJU'S, Vedantu, and similar) go deep on content, but are passive and screen-bound. They don't work for a commute, a walk, or a 5-minute gap between classes.
+- **Static PYQ/MCQ apps** give practice questions but no real explanation when a student gets something wrong, and no way to go deeper or shallower based on what the student already knows.
+
+ExamBuddy AI sits in the gap all three leave open: voice-native (hands-free, screen-free), grounded in the actual syllabus content rather than the model's general knowledge, and able to move between explaining and testing in the same conversation.
+
+### Supporting capabilities built on top of this core difference:
+
+- 🎙 Voice Q&A 
+- 📝 Knowledge tester
+- 📚 Quick Summaries
+- 📄 Revision Notes
+- 🎯 Adaptive Learning
+- 🔍 Source-Grounded Answers
+- 🧠 Personalized Learning Memory
 
 ---
 
