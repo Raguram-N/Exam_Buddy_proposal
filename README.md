@@ -241,19 +241,17 @@ This includes:
 
 ## 💰 Revenue Potential & Growth Roadmap
 
-### 🚀 Initial School Collaboration Phase
-
-Our go-to-market strategy begins with direct school partnerships.
+### 🏫 Initial School Collaboration Phase
 
 * 🏫 5 Partner Schools
-* 👨‍🎓 Average 2,000 Students per School
-* 📚 Total Students Reached: 10,000
+* 👨‍🎓 Average 1,000 Students per School (Classes 6–8)
+* 📚 Total Students Reached: 5,000
 
 Assuming an annual subscription of ₹799 per student:
 
-**10,000 Students × ₹799/year = ₹79.9 Lakhs Annual Revenue**
+**5,000 Students × ₹799/year = ₹39.95 Lakhs Annual Revenue**
 
-This phase allows us to validate product-market fit, improve learning outcomes, and build case studies with real student usage data.
+This initial phase focuses on validating product-market fit, measuring learning outcomes, and building strong case studies before expanding to additional schools and grade levels.
 
 ---
 
