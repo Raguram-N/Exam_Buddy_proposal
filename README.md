@@ -249,9 +249,9 @@ This includes:
 
 Assuming a subscription fee of **₹199 per student per month**:
 
-> **5,000 Students × ₹199/month = ₹9.95 Lakhs Monthly Revenue**
+- **5,000 Students × ₹199/month = ₹9.95 Lakhs Monthly Revenue**
 
-> **Annualized Revenue Potential: ₹1.19 Crores per Year**
+- **Annualized Revenue Potential: ₹1.19 Crores per Year**
 
 This initial phase focuses on validating product-market fit, demonstrating measurable learning outcomes, and building strong school success stories before expanding to larger districts and state-wide deployments.
 
