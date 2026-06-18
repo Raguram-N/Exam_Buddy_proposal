@@ -87,17 +87,70 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
-## ⚙️ Why We're Different
+## ⚙️ What’s Out There
 
-Most learning tools fall into one of three buckets, and each has a real gap that ExamBuddy AI is built to close:
+Most learning tools today fall into three categories, and each has a gap that ExamBuddy AI is designed to solve:
 
-- **General AI chatbots** (ChatGPT, Gemini, custom GPTs) answer fluently, but aren't grounded in a specific board's syllabus — explanations can drift from what's actually taught, and there's no built-in exam-format practice.
-- **Video-based edtech platforms** (BYJU'S, Vedantu, and similar) go deep on content, but are passive and screen-bound. They don't work for a commute, a walk, or a 5-minute gap between classes.
-- **Static PYQ/MCQ apps** give practice questions but no real explanation when a student gets something wrong, and no way to go deeper or shallower based on what the student already knows.
+* **General AI chatbots** (like ChatGPT and Gemini) can explain anything, but they are not aligned with any specific school syllabus. This often leads to answers that don’t match what students are actually learning, and there is no structured exam practice.
 
-ExamBuddy AI sits in the gap all three leave open: voice-native (hands-free, screen-free), grounded in the actual syllabus content rather than the model's general knowledge, and able to move between explaining and testing in the same conversation.
+* **Video-based learning platforms** (like BYJU’S and Vedantu) provide strong explanations, but they are passive and require screen time. They are not suitable for quick revision or learning on the move.
 
-### Supporting capabilities built on top of this core difference:
+* **MCQ or PYQ practice apps** focus only on questions, but they don’t explain mistakes properly or adapt to the student’s learning level.
+
+ExamBuddy AI fills this gap by being **voice-first, syllabus-aligned, and interactive**, combining explanation and testing in a single learning flow.
+
+---
+
+## ✨ How we differentiate 
+
+ExamBuddy includes a Personalized AI Teacher that helps students revise what they studied in school every day.
+
+---
+
+### 🔔 Daily Learning Notification
+
+Each student receives **one learning notification per day**.
+
+This is automatically based on the school timetable (for example: Monday – Science, Tuesday – Maths).
+
+### 📌 Example:
+
+> “Today’s quick learning check: Photosynthesis (Science). Ready to revise?”
+
+---
+
+### 🎯 Student Options
+
+After opening the notification, students can:
+
+* Take a short quiz
+* Ask the AI to explain the topic
+* Skip for the day
+
+---
+
+### 📊 Teacher View
+
+Teachers can track:
+
+* Daily revision topic
+* Student participation
+* Level of understanding in the class
+
+---
+
+### ⭐ Purpose
+
+This feature helps students:
+
+* Revise what they learn in school every day
+* Strengthen memory through regular practice
+* Stay connected to learning even after school hours
+
+---
+
+
+## 🤝 Supporting capabilities built on top of this core difference:
 
 - 🎙 Voice Q&A 
 - 📝 Knowledge tester
