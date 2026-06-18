@@ -87,23 +87,27 @@ AI      : Generates topic-specific exam questions instantly.
 
 ---
 
+Here is a rewritten version including **competitive exam institutions (TNPSC / NEET / UPSC coaching angle)** in a clean, product-ready way:
+
+---
+
 ## ⚙️ What’s Out There
 
 Most learning tools today fall into three categories, and each has a gap that ExamBuddy AI is designed to solve:
 
-* **General AI chatbots** (like ChatGPT and Gemini) can explain anything, but they are not aligned with any specific school syllabus. This often leads to answers that don’t match what students are actually learning, and there is no structured exam practice.
+* **General AI chatbots** (like ChatGPT and Gemini) can explain anything, but they are not aligned with any specific school syllabus or exam pattern. This leads to answers that may not match what students are actually taught, and there is no structured exam practice for school or competitive exams.
 
-* **Video-based learning platforms** (like BYJU’S and Vedantu) provide strong explanations, but they are passive and require screen time. They are not suitable for quick revision or learning on the move.
+* **Video-based learning platforms** (like BYJU’S, Vedantu, and coaching institute apps) provide strong explanations, but they are passive and require screen time. They are not suitable for quick revision, voice-based learning, or last-minute exam preparation.
 
-* **MCQ or PYQ practice apps** focus only on questions, but they don’t explain mistakes properly or adapt to the student’s learning level.
+* **MCQ / PYQ practice apps and coaching test series** (used by school exam prep, TNPSC, NEET, UPSC institutes) provide questions, but they often lack real-time explanation, adaptive learning, and personalized feedback based on student weakness.
 
-ExamBuddy AI fills this gap by being **voice-first, syllabus-aligned, and interactive**, combining explanation and testing in a single learning flow.
+ExamBuddy AI fills this gap by being **voice-first, syllabus-aligned, and exam-focused**, combining explanation, practice, and revision in a single interactive flow for both **school exams and competitive exam preparation**.
 
 ---
 
-## ✨ How we differentiate 
+## ⚙️ Personalized AI Teacher
 
-ExamBuddy includes a Personalized AI Teacher that helps students revise what they studied in school every day.
+ExamBuddy includes a Personalized AI Teacher that helps students revise what they studied in school every day, while also supporting structured preparation for **competitive exams and coaching institute learning paths**.
 
 ---
 
@@ -111,11 +115,18 @@ ExamBuddy includes a Personalized AI Teacher that helps students revise what the
 
 Each student receives **one learning notification per day**.
 
-This is based on the Class teacher craftmanship (for example: Monday – Science (Photosynthesis), Tuesday – Maths (Algebra formula).
+This is based on teacher craftmanship:
+
+* School timetable (e.g., Monday – Science, Tuesday – Maths)
+* OR competitive exam plan (e.g., TNPSC History, NEET Biology, UPSC Polity schedule)
 
 ### 📌 Example:
 
 > “Today’s quick learning check: Photosynthesis (Science). Ready to revise?”
+
+or
+
+> “TNPSC Practice: Modern Indian History – Quick recall test ready?”
 
 ---
 
@@ -123,19 +134,21 @@ This is based on the Class teacher craftmanship (for example: Monday – Science
 
 After opening the notification, students can:
 
-* Take a short quiz
-* Ask the AI to explain the topic
+* Take a short quiz (school or competitive exam format)
+* Ask the AI to explain the topic (simple or advanced level)
 * Skip for the day
 
 ---
 
-### 📊 Teacher View
+### 📊 Teacher / Institute View
 
-Teachers can track:
+Teachers or coaching institutes can track:
 
-* Daily revision topic
+* Daily revision topic coverage
 * Student participation
-* Level of understanding in the class
+* Understanding level of students
+* Weak topics across class or batch
+* Readiness level for exams (school tests or competitive exams)
 
 ---
 
@@ -143,9 +156,10 @@ Teachers can track:
 
 This feature helps students:
 
-* Revise what they learn in school every day
-* Strengthen memory through regular practice
-* Stay connected to learning even after school hours
+* Revise daily what they learn in school or coaching
+* Build strong memory through active recall practice
+* Stay consistent for both school exams and competitive exams like **TNPSC, NEET, UPSC, SSC**
+* Get continuous feedback instead of only periodic tests
 
 ---
 
