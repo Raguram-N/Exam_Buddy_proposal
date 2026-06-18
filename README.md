@@ -111,7 +111,7 @@ ExamBuddy includes a Personalized AI Teacher that helps students revise what the
 
 Each student receives **one learning notification per day**.
 
-This is automatically based on the school timetable (for example: Monday – Science, Tuesday – Maths).
+This is based on the Class teacher craftmanship (for example: Monday – Science (Photosynthesis), Tuesday – Maths (Algebra formula).
 
 ### 📌 Example:
 
